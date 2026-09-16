@@ -37,6 +37,10 @@
     margin: 20px;
 }
 
+.btn-1:hover {
+    transform: translateY(2px);
+}
+
 .hero {
     background-image: url(/assets/Hero-bg.png);
     width: 100%;
@@ -58,12 +62,19 @@
     margin-bottom: 10px;
 }
 
+.hero-btn:hover {
+    transform: translateY(2px);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
+}
+
 /* banner section */
 
 .banner {
-    background-color: rgba(13, 19, 33, 0, 02);
+    background-color: rgb(246, 245, 245);
     margin: 40px 97px;
     border-radius: 16px;
+    padding-top: 5px;
+    /* border: 2px solid yellow; */
     /* border: 2px solid violet; */
 }
 
@@ -86,7 +97,7 @@
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     max-width: 900px;
     margin: 30px auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -167,4 +178,52 @@
     color: #555;
     margin-bottom: 20px;
     line-height: 1.5;
+}
+
+
+/* Inspiration */
+.Inspiration {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    /* border: 2px solid rgb(178, 45, 58); */
+}
+
+
+
+.Inspiration-emdad {
+    border: 2px solid azure;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: beige;
+}
+
+@media (max-width: 768px) {
+    .container-link {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    .container-link.active {
+        display: flex;
+    }
+
+
+
+    .card-1 {
+        display: block;
+    }
+
+
+
+    .card-2 {
+        display: block;
+    }
 }
